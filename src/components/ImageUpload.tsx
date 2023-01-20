@@ -57,7 +57,7 @@ const ImageUpload = () => {
   }
 
   return (
-    <div className="flex flex-col w-fit h-fit items-center py-9 px-8 shadow-lg rounded-xl gap-4">
+    <div className="flex flex-col w-fit h-fit items-center py-2 px-2 sm:py-9 sm:px-8 shadow-lg rounded-xl gap-4">
       <h1 className="text-lg">Upload your image</h1>
       <p className="text-xs text-gray-500">File should be JPG, PNG, etc...</p>
 

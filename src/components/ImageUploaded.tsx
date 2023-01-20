@@ -9,7 +9,7 @@ const ImageUploaded = () => {
   const image = useImage();
 
   return (
-    <div className="flex flex-col w-fit h-fit items-center py-9 px-8 shadow-lg rounded-xl gap-4">
+    <div className="flex flex-col w-fit h-fit items-center py-2 px-2 sm:py-9 sm:px-8 shadow-lg rounded-xl gap-4">
       <span className="material-icons md-48 align-middle text-green-600 ">check_circle</span>
       <h1 className="text-lg">Uploaded Successfully!</h1>
       <div className="ldBar" data-value="50"></div>
