@@ -1,25 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ImageUploader from './components/ImageUploader';
+import ImageProvider from './context/ImageProvider';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ImageProvider>
+      <div className="flex flex-col h-screen items-center justify-center align-center">
+        <ImageUploader />
+        <div className="absolute bottom-4">
+          <p className="text-xs text-gray-500">Created by <a href="https://github.com/FrancoCarchedi" target="_blank" rel="noreferrer"><strong>Franco Carchedi</strong></a> - devChallenges.io</p>
+        </div>
+      </div>
+    </ImageProvider>
   );
 }
 
